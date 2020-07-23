@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+#header .header .logo {
+    display: flex;
+    align-items: center;
+}
+#header .header .logo a {
+    font-size: 28px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+#header .header .logo a {
+   margin: 1% 0 0 1%;
+}
+#header .header .logo a span {
+    color: crimson;
+}
+#header .header .links{
+    display: flex;
+    justify-content: flex-end;
+}
+#header .header .links a{
+    font-size: 20px;
+    margin: 0 1% 2% 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+#header .header .links a:hover{
+    color: crimson;
+}
+#header {
+    background-color: burlywood;
+}
+
+#main .main .main-img {
+    max-height: 100%;
+    max-width: 100%;
+    background-size: cover;
+}
+#flav .flav .flav-head {
+    display: flex;
+    justify-content: center;
+    margin: 0px 0 40px 0;
+    
+}
+#flav .flav .flav-head h1{
+    font-size: 88px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+#flav .flav .flav-head h1 span{
+    color: crimson;
+}
+#flav .flav .flav-item {
+    display: flex;
+    justify-content: space-around;
+}
+#flav .flav .flav-item img {
+    box-shadow: 0px 0px 18px 0  #0000002c;
+    transition: .3s ease box-shadow;
+}
+#flav .flav .flav-item img:hover {
+    box-shadow: 0px 0px 5px 0 #0000002c;   
+}
+#service .service .service-head {
+    display: flex;
+    justify-content: center;
+    margin: 70px 0 40px 0;
+    
+}
+#service .service .service-head h1 {
+    font-size: 88px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+#service .service .service-head h1 span {
+    color: crimson;
+}
+#service .service .left {
+    margin-left: 5%;
+    display: inline-block;
+    box-shadow: 0px 0px 5px 0  #0000002c;
+    transition: .3s ease box-shadow;
+}
+#service .service .left:hover{
+    box-shadow: 0px 0px 2px 0 #0000002c;   
+}
+#service .service .body {
+    display: flex;
+}
+#service .service .body .right {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#service .service .body .right .r-head {
+    font-weight: 100;
+    font-size: 25px;
+}
+#service .service .body .right .r-pra {
+    margin-top: 3%;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+#footer .footer{
+    background-color:#DEB887;
+}
+#footer .footer .logo a {
+    display: flex;
+    justify-content: center;
+}
+#footer .footer .logo a{
+    font-size: 28px;
+    text-decoration: none;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: black;
+}
+#footer .footer .logo a span{
+    color: crimson;
+}
+#footer .footer .logo{
+    margin: 2% 0 1% 0;
+    padding-top: 1%;
+}
+#footer .footer h2{
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 1%;
+}
+#footer .footer .icon {
+    display: flex;
+    justify-content: center;
+}
+#footer .footer p {
+    text-align: center;
+    margin-top: 1%;
+}
+#footer .social-item{
+    height: 40px;
+    width: 40px;
+    margin: 0 8px;
+}
+
+@media screen and (max-width:667px) {
+    
+    
+    #header .header .logo {
+        display: flex;
+        justify-content: center;
+    }
+    #header .header .links {
+        display: flex;
+        justify-content:center ;
+    }
+    #header .header .links a {
+     font-size: 16px;
+     font-weight: 600;
+     padding: 2px;
+    }
+    #header .header .logo a {
+        padding: 10px;
+    }
+    #main .main .main-img img{
+        background-size: cover;
+        width: 600px;
+    }
+    #flav .flav .flav-item {
+        flex-direction: column;
+        align-items: center;
+    }
+    #flav .flav .flav-item img {
+        width: 300px;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+    #service .service .body .left{
+        width: 400px;
+        height: 400px;
+    }
+
+    #service .service .body{
+        flex-direction: column;
+    }
+    #service .service .body .right .r-pra {
+        letter-spacing: 0px;
+    }
+}
+@media screen and (max-width:1024px) {
+
+    #header .header .logo {
+        display: flex;
+        justify-content: center;
+    }
+    #header .header .links {
+        display: flex;
+        justify-content:center ;
+    }
+    #header .header .links a {
+      font-size: 20px;
+      font-weight: 600;
+      padding: 4px;
+    }
+    #header .header .logo a {
+        font-size: 32px;
+        padding: 10px;
+    }
+    #main .main .main-img img{
+     background-size: cover;
+     width: 1024px;
+    }
+    #flav .flav .flav-item a img {
+        width: 270px;
+        padding: 6px;
+    }
+    #service .service .body .left img{
+        width: 400px;
+    }
+    #service .service .body .right .r-pra{
+        letter-spacing: 0;
+    }
+    #service .service .body .right .r-pra {
+        display: inline-block;
+    }
+} 
